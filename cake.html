@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cake</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
-<body>
+<body onload="launchConfetti(); cakeLogic();">
 <div class="container">
-  <img id="cake" src="static/cake.png" width="250">
-  <div class="box" draggable="true" id="knife">🔪</div>
+  <div id="cake" class="cake">
+    <div class="cake-frosting"></div>
+    <div class="cake-base"></div>
+    <div class="candle"><div class="flame"></div></div>
+  </div>
+
+  <div id="knife" class="box" draggable="true">🔪</div>
   <p>Drag the knife onto the cake!</p>
 </div>
 </body>
