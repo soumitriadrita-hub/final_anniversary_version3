@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFC1CC;
+  background-image: radial-gradient(#FFD1DC 20%, transparent 20%);
+  background-size: 60px 60px;
+  text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bounce {
+  width: 220px;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.box {
+  background: white;
+  border: 2px solid hotpink;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 15px;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.black-bg {
+  background: black;
+  color: white;
+}
